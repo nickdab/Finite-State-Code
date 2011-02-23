@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1292274002 source:e:\code\c++\parser\parser\src\parser.cpp
+
+1292300388 e:\code\c++\parser\parser\include\parser.h
+
+1292274044 source:e:\code\c++\parser\parser\main.cpp
+	<iostream>
+	"include/parser.h"
+
+1292274044 arser.h"
+
+1292273832 e:\code\c++\parser\parser\src\parser.cpp
+
+1292274044 source:/media/98C5-7D77/Code/c++/parser/parser/main.cpp
+	<iostream>
+	"include/parser.h"
+
+1292300129 /media/98C5-7D77/Code/c++/parser/parser/include/parser.h
+
+1292274002 source:/media/98C5-7D77/Code/c++/parser/parser/src/parser.cpp
+
