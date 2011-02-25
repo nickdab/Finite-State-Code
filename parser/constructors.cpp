@@ -1,27 +1,30 @@
 //Default Constructor:
+
+#include "parserdef.h"
+
 Parser::Parser()
 {
-    unsigned int InputLen = 0;
-    Input = new char[InputLen];
+    Input = "";
+    Keyword[NUMKEYS];
+    CurrNum = 0;
+
+    for (int i = 0; i < NUMKEYS; i++)
+    {
+        Keyword[i] = "";
+    }
 }
 
-//Other Constructors:
-Parser::Parser(unsigned int input_len)
+Parser::Parser(std::string input)
 {
-    InputLen = input_len;
-    Input = new char[InputLen];
-}
-
-Parser::Parser(char * input)
-{
-    InputLen = 0;
     Input = input;
+    Keyword[NUMKEYS];
+    CurrNum = 0;
+
+    for (int i = 0; i < NUMKEYS; i++)
+    {
+        Keyword[i] = "";
+    }
 }
 
-//Destructor:
-Parser::~Parser()
-{
-    delete Input;
-    Input = NULL;
-}
+
 
