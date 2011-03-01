@@ -1,14 +1,11 @@
 #include "..\parser\parser.h"
 #include <string>
 #include <iostream>
-
-const int NUM_KEYWORDS = 0;
+#include <fstream>
 
 int main()
 {
 	using namespace std;
-
-	string input = "";
 
     Parser parser;
 
@@ -17,9 +14,17 @@ int main()
     parser.addKeyword("angry");
     parser.addKeyword("confused");
     parser.addKeyword("bizarre");
-    parser.addKeyword("woah!");
 
-    cout << parser.getKeywordByIndex(4);
+    cin >> parser;
+
+    cout << endl << parser;
+
+	for (int i = 0; i < NUMKEYS; i++)
+	{
+		cout << endl << parser.getKeywordByIndex(i);
+	}
+
+	cout << endl << parser.getKeywordByName("angry");
 
     return 0;
 

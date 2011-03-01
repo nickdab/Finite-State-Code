@@ -5,6 +5,7 @@ special characters, etc...*/
 #define PARSERDEF_H
 
 #include <string>
+#include <iostream>
 
 class Parser
 {
@@ -33,6 +34,8 @@ class Parser
         void setKeywordByIndex( std::string keyword, int index);
         std::string addKeyword(std::string input);
 
-
+        //Overloaded Operators:
+        friend std::istream& operator>>(std::istream& in, Parser &parser);
+        friend std::ostream& operator<<(std::ostream& out, Parser &parser);
 };
 #endif // PARSERDEF_H

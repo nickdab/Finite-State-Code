@@ -6,5 +6,6 @@
 #include "constructors.cpp"
 #include "accessors.cpp"
 #include "mutators.cpp"
+#include "overloaded-operators.cpp"
 
 #endif //PARSER_H

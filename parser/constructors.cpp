@@ -1,7 +1,5 @@
 //Default Constructor:
 
-#include "parserdef.h"
-
 Parser::Parser()
 {
     Input = "";

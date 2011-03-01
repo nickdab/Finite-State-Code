@@ -1,4 +1,3 @@
-#include "parserdef.h"
 
 std::string Parser::getInput()
 {
