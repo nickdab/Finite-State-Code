@@ -37,5 +37,8 @@ class Parser
         //Overloaded Operators:
         friend std::istream& operator>>(std::istream& in, Parser &parser);
         friend std::ostream& operator<<(std::ostream& out, Parser &parser);
+		friend bool operator==(Parser &parser1, Parser &parser2);
+		friend bool operator!=(Parser &parser1, Parser &parser2);
+		friend void operator=(Parser& parser1, Parser& parser2);
 };
 #endif // PARSERDEF_H

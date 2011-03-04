@@ -8,6 +8,7 @@ int main()
 	using namespace std;
 
     Parser parser;
+    Parser new_parser = parser;
 
     parser.addKeyword("happy");
     parser.addKeyword("sad");
@@ -25,6 +26,11 @@ int main()
 	}
 
 	cout << endl << parser.getKeywordByName("angry");
+
+	if (new_parser == parser)
+	{
+	    cout << "yay!";
+	}
 
     return 0;
 

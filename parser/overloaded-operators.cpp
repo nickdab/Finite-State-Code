@@ -28,3 +28,34 @@ std::ostream& operator<<(std::ostream& out, Parser& parser)
 
     return out;
 }
+
+bool  operator==(Parser& parser1, Parser& parser2)
+{
+	if ((parser1.Input == parser2.Input) && (parser1.Keyword == parser2.Keyword))
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
+
+bool operator!=(Parser& parser1, Parser& parser2)
+{
+	if ((parser1.Input == parser2.Input) && (parser1.Keyword == parser2.Keyword))
+	{
+		return false;
+	}
+	else
+	{
+		return true;
+	}
+}
+
+void operator=(Parser& parser1, Parser& parser2)
+{
+	parser1.Keyword = parser2.Keyword;
+	parser1.Input = parser2.Input;
+	parser1.CurrNum = parser2.CurrNum;
+}
