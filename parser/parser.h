@@ -7,5 +7,6 @@
 #include "accessors.cpp"
 #include "mutators.cpp"
 #include "overloaded-operators.cpp"
+#include "open.cpp"
 
 #endif //PARSER_H

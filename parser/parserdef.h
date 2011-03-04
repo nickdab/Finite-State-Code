@@ -6,6 +6,7 @@ special characters, etc...*/
 
 #include <string>
 #include <iostream>
+#include <fstream>
 
 class Parser
 {
@@ -39,6 +40,8 @@ class Parser
         friend std::ostream& operator<<(std::ostream& out, Parser &parser);
 		friend bool operator==(Parser &parser1, Parser &parser2);
 		friend bool operator!=(Parser &parser1, Parser &parser2);
-		friend void operator=(Parser& parser1, Parser& parser2);
+
+		//This class member opens a file and transfers its content to the Input member variable
+		void Open(std::string file_name);
 };
 #endif // PARSERDEF_H
