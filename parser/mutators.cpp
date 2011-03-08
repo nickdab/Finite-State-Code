@@ -1,3 +1,5 @@
+#include "parserdef.h"
+
 //Mutators:
 
 void Parser::setInput(std::string input)

@@ -1,3 +1,5 @@
+#include "parserdef.h"
+
 std::istream& operator>>(std::istream& in, Parser& parser)
 {
     std::string in_text = "";
@@ -31,31 +33,36 @@ std::ostream& operator<<(std::ostream& out, Parser& parser)
 
 bool  operator==(Parser& parser1, Parser& parser2)
 {
-	if ((parser1.Input == parser2.Input) && (parser1.Keyword == parser2.Keyword))
-	{
-		return true;
-	}
-	else
-	{
-		return false;
-	}
+        if (parser1.Input != parser2.Input)
+        {
+            return false;
+        }
+
+    for (int i = 0; i < NUMKEYS; i++)
+    {
+        if (parser1.Keyword[i] != parser2.Keyword[i])
+        {
+            return false;
+        }
+    }
+
+    return true;
 }
 
 bool operator!=(Parser& parser1, Parser& parser2)
 {
-	if ((parser1.Input == parser2.Input) && (parser1.Keyword == parser2.Keyword))
-	{
-		return false;
-	}
-	else
-	{
-		return true;
-	}
-}
+      if (parser1.Input != parser2.Input)
+        {
+            return true;
+        }
 
-void operator=(Parser& parser1, Parser& parser2)
-{
-	parser1.Keyword = parser2.Keyword;
-	parser1.Input = parser2.Input;
-	parser1.CurrNum = parser2.CurrNum;
+    for (int i = 0; i < NUMKEYS; i++)
+    {
+        if (parser1.Keyword[i] != parser2.Keyword[i])
+        {
+            return true;
+        }
+    }
+
+    return false;
 }

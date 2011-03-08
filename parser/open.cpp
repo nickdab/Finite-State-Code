@@ -1,3 +1,5 @@
+#include "parserdef.h"
+
 void Parser::Open(std::string file_name)
 {
 	std::ifstream input;

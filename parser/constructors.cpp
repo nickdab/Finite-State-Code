@@ -1,3 +1,5 @@
+#include "parserdef.h"
+
 //Default Constructor:
 
 Parser::Parser()

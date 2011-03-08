@@ -1,0 +1,30 @@
+# depslib dependency file v1.0
+1299614276 source:e:\code\finite-state-code\parser\accessors.cpp
+	"parserdef.h"
+
+1299614288 e:\code\finite-state-code\parser\parserdef.h
+	"numkeys.h"
+	<string>
+	<iostream>
+	<fstream>
+
+1299613230 e:\code\finite-state-code\parser\numkeys.h
+
+1299614192 source:e:\code\finite-state-code\parser\constructors.cpp
+	"parserdef.h"
+
+1299614180 source:e:\code\finite-state-code\parser\mutators.cpp
+	"parserdef.h"
+
+1299614206 source:e:\code\finite-state-code\parser\open.cpp
+	"parserdef.h"
+
+1299615098 source:e:\code\finite-state-code\parser\overloaded-operators.cpp
+	"parserdef.h"
+
+1299615244 source:e:\code\finite-state-code\compiler\main.cpp
+	"..\parser\parserdef.h"
+	<string>
+	<iostream>
+	<fstream>
+

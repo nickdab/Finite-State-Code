@@ -4,6 +4,7 @@ special characters, etc...*/
 #ifndef PARSERDEF_H
 #define PARSERDEF_H
 
+#include "numkeys.h"
 #include <string>
 #include <iostream>
 #include <fstream>
