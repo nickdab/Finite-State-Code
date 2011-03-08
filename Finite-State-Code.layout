@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="compiler\main.cpp" open="1" top="1" tabpos="4">
+		<Cursor position="189" topLine="0" />
+	</File>
+	<File name="parser\accessors.cpp" open="1" top="0" tabpos="2">
+		<Cursor position="21" topLine="0" />
+	</File>
+	<File name="parser\constructors.cpp" open="1" top="0" tabpos="7">
+		<Cursor position="217" topLine="0" />
+	</File>
+	<File name="parser\mutators.cpp" open="1" top="0" tabpos="6">
+		<Cursor position="392" topLine="0" />
+	</File>
+	<File name="parser\numkeys.h" open="0" top="0" tabpos="0">
+		<Cursor position="83" topLine="0" />
+	</File>
+	<File name="parser\open.cpp" open="1" top="0" tabpos="8">
+		<Cursor position="22" topLine="0" />
+	</File>
+	<File name="parser\overloaded-operators.cpp" open="1" top="0" tabpos="5">
+		<Cursor position="1238" topLine="27" />
+	</File>
+	<File name="parser\parser.h" open="1" top="0" tabpos="3">
+		<Cursor position="174" topLine="0" />
+	</File>
+	<File name="parser\parserdef.h" open="1" top="0" tabpos="1">
+		<Cursor position="2192" topLine="7" />
+	</File>
+</CodeBlocks_layout_file>
