@@ -3,43 +3,69 @@
 #include <iostream>
 #include <fstream>
 
+using namespace std;
+
+void _initialize(Parser&);
+void _INIT();
+
+bool _is_type_def(string keyword);
+
+Parser code;
+
+const int NUMTYPES = 1;
+string types[NUMTYPES] = {"bit"};
+
 int main()
 {
-	using namespace std;
+	string file_name = "";
 
-    Parser parser;
+	_initialize(code);
 
-    parser.addKeyword("happy");
-    parser.addKeyword("sad");
-    parser.addKeyword("angry");
-    parser.addKeyword("confused");
-    parser.addKeyword("bizarre");
+	cout << "FILE NAME >>";
+	cin >> file_name;
 
-    cin >> parser;
+	code.Open(file_name);
 
-    cout << endl << parser;
+	cout << code;
 
-	for (int i = 0; i < NUMKEYS; i++)
-	{
-		cout << endl << parser.getKeywordByIndex(i);
-	}
-
-	cout << endl << parser.getKeywordByName("angry");
-
-	Parser new_parser = parser;
-	new_parser.setKeywordByIndex("happy go funtimes!", 2);
-
-	if (new_parser != parser)
-	{
-	    cout << "yay!";
-	}
-
-	parser.Open("in.txt");
-
-	cout << parser;
 
     return 0;
+}
+
+void _initialize(Parser& code)
+{
+    code.addKeyword("read");            //read from an input
+	code.addKeyword("write");           //write to an output
+	code.addKeyword("goto");            //go to a section
+	code.addKeyword("=");
+	code.addKeyword("==");
+
+	code.addKeyword("if");              //conditional statement "if"
+
+	code.addKeyword(";");               //end a line of code
+	code.addKeyword("//");              //comment--not to be parsed
+
+	code.addKeyword("section");         //define a section
+
+	code.addKeyword("#INIT");           //directive to initialize variables
+	code.addKeyword("#START");          //directive to start parsing code
+}
+
+void _INIT()
+{
 
 
+}
 
+bool _is_type_def(string keyword)
+{
+    for (int i = 0; i < NUMTYPES; i++)
+    {
+        if (keyword == types[i])
+        {
+            return true;
+        }
+    }
+
+    return false;
 }

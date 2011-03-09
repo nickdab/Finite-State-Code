@@ -2,7 +2,7 @@
 <CodeBlocks_layout_file>
 	<ActiveTarget name="Debug" />
 	<File name="compiler\main.cpp" open="1" top="1" tabpos="4">
-		<Cursor position="189" topLine="0" />
+		<Cursor position="337" topLine="0" />
 	</File>
 	<File name="parser\accessors.cpp" open="1" top="0" tabpos="2">
 		<Cursor position="21" topLine="0" />
