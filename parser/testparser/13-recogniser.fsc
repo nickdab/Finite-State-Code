@@ -1,0 +1,41 @@
+//This finite-state-code program recognises the decimal number "13", binary "1110" in a string of numbers.
+
+#INIT
+
+bit x = cin;						//the input we are getting from cin, labeled "x", is a binary integer ("1" or "0")
+
+#START
+/*This is a comment that will be sawweeeeeeet. So do it.
+
+see. it should go on.
+
+		la la la
+		
+					la la la*/ 
+section a:
+	read x;
+	write 0;
+	if x == 1, goto b;
+	goto a;
+
+section b:
+	read x;
+	write 0;
+	if x == 1, goto c;
+	goto a;
+
+section c:
+	read x;
+	write 0;
+	if x == 1, goto d;
+	goto a;
+	
+section d:
+	read x;
+	if x == 0, goto e;
+	write 1;
+	goto a;
+	
+section e:
+	write 0;
+	goto a;

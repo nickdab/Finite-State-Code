@@ -1,0 +1,37 @@
+//This finite-state-code program recognises the decimal number "13", binary "1110" in a string of numbers.
+
+#INIT
+char x = cin;
+out = out.txt;
+
+#START
+
+state a:
+	read x;
+	if x == '1' , write '0';
+	if x == '1' , goto b;
+	write '0';
+	goto a;
+
+state b:
+	read x;
+	if x == '1' , write '0';
+	if x == '1' , goto c;
+	write '0';
+	goto a;
+	
+state c:
+	read x;
+	if x == '1' , write '0';
+	if x == '1' , goto d;
+	write '0';
+	goto a;
+	
+state d:
+	read x;
+	if x == '0' , write '1';
+	if x == '0' , goto a;
+	write '0';
+	goto d;
+
+#END
