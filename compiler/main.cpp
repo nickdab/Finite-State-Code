@@ -15,7 +15,7 @@ int main()
 	bool input_is_file = false, output_is_file = false, end_reached = false;
 
     std::ofstream output_code;
-	output_code.open("out.c");
+	output_code.open("");
 
 	Parser finite_state_code;
 
